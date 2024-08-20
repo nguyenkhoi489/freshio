@@ -1,0 +1,137 @@
+/*
+Theme Name: Freshio
+Description: This is a child theme for Flatsome Theme
+Author: UX Themes
+Template: flatsome
+Version: 3.0
+*/
+:root {
+    --color-primary: #AB1621;
+    --color-seconds-primary: #fff;
+    --text-color: #333333;
+    --font-size: 15px;
+    --line-height: 1.5;
+    --font-size-title: 25px
+}
+
+body,
+html {
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    color: var(--text-color);
+    text-align: justify;
+}
+
+/* Header Nav */
+.header-main {
+    padding: 30px 0;
+}
+
+.header-language-dropdown i {
+    margin-left: 5px;
+}
+
+.header-main .header-nav>li>a {
+    padding: 15px 10px;
+    color: var(--text-color);
+    font-size: var(--font-size);
+}
+
+.header-main .header-nav>li.active>a,
+.header-main .header-nav>li:hover>a {
+    color: var(--color-primary);
+}
+
+/* UX Title */
+.nkd_title {
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: var(--font-size-title);
+}
+
+/* Custom button */
+
+.btn-custom__nkd {
+    background-color: var(--color-seconds-primary);
+    margin: 0;
+    border-color: var(--color-primary);
+}
+
+.btn-custom__nkd span {
+    padding: 10px 24px;
+    font-weight: 500;
+    border-top-left-radius: 4px;
+    color: var(--color-primary);
+    font-weight: 600;
+    border-right: 1px solid var(--color-primary);
+}
+
+.btn-custom__nkd i {
+    padding: 10px;
+    color: var(--color-seconds-primary);
+    color: var(--color-primary);
+}
+
+.btn-custom__nkd:hover {
+    background-color: var(--color-primary);
+}
+
+.btn-custom__nkd:hover>* {
+    color: var(--color-seconds-primary);
+}
+
+/*  */
+.ss_item {
+    border-radius: 170px;
+    background-color: #E8F8F7;
+    padding: 20px;
+
+}
+.ss_img {
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.ss_img img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.ss_img::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .3);
+    -webkit-transition-duration: 400ms;
+    transition-duration: 400ms;
+    border-radius: 4px;
+    content: "";
+    opacity: 0;
+}
+.ss_info {
+    position: relative;
+    width: 100%;
+    -webkit-box-align: stretch;
+    text-align: center;
+    list-style: kannada;
+    margin: auto;
+    min-height: 100px;
+}
+.ss_name {
+    padding: 20px 0px 10px;
+}
